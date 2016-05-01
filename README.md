@@ -44,3 +44,4 @@ gradle swagger
 - `swaggerOutput` - target output path (default is ${project.build.directory}/generated-sources/swagger)
 - `swaggerSrc` - target source directory (default is ${project.root.directory}/src/swagger).  This directory should be added as as source set
 - `swaggerLibrary` -  library template (sub-template) to use
+- `swaggerSerializableModel` - boolean value to set model to be serializable.
