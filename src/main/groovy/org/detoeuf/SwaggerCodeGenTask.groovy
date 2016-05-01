@@ -39,7 +39,11 @@ class SwaggerCodeGenTask extends DefaultTask {
         if(project.hasProperty("swaggerLibrary")){
             config.additionalProperties().put('library', project.swaggerLibrary)
         }
-
+        
+        if(project.hasProperty("swaggerSerializableModel")){
+            config.additionalProperties().put('serializableModel', project.swaggerLibrary)
+        }
+        
         ClientOptInput input = new ClientOptInput().opts(new ClientOpts()).swagger(swagger)
 
         input.setConfig(config)
